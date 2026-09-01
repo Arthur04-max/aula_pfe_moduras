@@ -1,0 +1,100 @@
+/* ==========================================
+   1. CONFIGURAÇÕES GERAIS E RESET
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   2. ESTRUTURA DAS SEÇÕES
+   ========================================== */
+.secao-moldura {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 30px auto; /* Margin externa separa uma section da outra */
+    padding: 25px;     /* Padding interno para afastar o texto das bordas da seção */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.secao-moldura h2 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.secao-moldura p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.container-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Base para todas as imagens se ajustarem à tela */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================
+   3. ESTILOS ESPECÍFICOS DAS MOLDURAS
+   ========================================== */
+
+/* Seção 1: Moldura Clássica */
+.img-classica {
+    background-color: #fff;
+    padding: 15px;                  /* Espaço branco entre a imagem e a borda preta */
+    border: 12px solid #2b2b2b;     /* A "moldura" principal em si */
+    margin: 10px 0;                 /* Afastamento vertical externo */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Seção 2: Moldura Moderna */
+.img-moderna {
+    background-color: #eaeaea;      /* Fundo cinza claro simulando o papel passepartout */
+    padding: 25px;                  /* Padding maior para destacar o fundo */
+    border: 2px solid #fff;         /* Borda branca fina externa */
+    border-radius: 4px;             /* Cantos levemente arredondados */
+    margin: 15px 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Seção 3: Moldura Minimalista */
+.img-minimalista {
+    background-color: transparent;
+    padding: 0;                     /* Sem preenchimento interno */
+    border: 1px solid #999;         /* Apenas uma linha fina */
+    margin: 40px 0;                 /* Grande margem para isolar e destacar o conteúdo */
+}
